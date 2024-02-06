@@ -1,0 +1,15 @@
+genre = input('enter genre : ')
+ratin = float (input('enter rating out of 1\10 : '))r
+release = int(input('enter release year : '))
+def rec (genre,ratin,release):
+    if genre in ['action','drama','sitcom'] or ratin in [1,2,3,4,5,6] or release in [2010,2011,2012,2013,2014,2015,2016,]:
+        return ['Ironman','inception','thor','train to busan']
+    elif genre in ['scientific','comedy','horror'] or ratin in [7,8,9,10] or release in [2017.2018,2019.2020]:
+         return ['Interseller','bladerunner','everything evreyone all at once']
+    else:
+        return ['the mark','Ironman2','Kunfu panda','three idiots']
+    print('movies recommendation are : ')
+
+    for i in rec(genre,ratin,release):
+        print(i)
+        
